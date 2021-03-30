@@ -1,0 +1,52 @@
+#+TITLE: Themes of Discrete Mathematics
+#+DESCRIPTION: The main themes of a first course in discrete mathematics
+#+FILETAGS: :math:discrete:theme:
+#+DATE: [2021-03-30 Tue] 
+
+* Discrete Mathematics vs. Calculus
+  - Discrete mathematics describes the processes that consist of a sequence of individual steps
+  - Calculus describes processes that change in a continuous fashion
+  - Calculus was the basis of the science and technology of the Industrial Age
+  - Discrete Mathematics is the basis of the science and technology of the Information Age
+    
+* Main Themes
+** Logic and Proof
+   - Using logically valid forms of argument
+   - Avoiding common logical errors
+   - Reasoning from definitions
+   - Using direct and indirect arguments to derive new results from existing true statements
+   - Working with symbolic representations
+     
+** Induction and Recursion
+   - Recursion solves problems by putting together solutions to similar smaller problems
+   - Induction is used to verify the formulas resulting from recursive thinking
+     
+** Discrete Structures
+   - The abstract structures that describe, categorise and reveal relationships among
+     discrete mathematical objects
+*** Examples:
+    * Sets
+    * Boolean algebras
+    * Functions
+    * Relations
+    * Graphs and trees
+    * Formal languages and regular expressions
+    * Finite-state automata
+      
+** Combinatorics and Discrete Probability
+   - Combinatorics is the mathematics of counting and arranging objects
+   - Probability is the study of random or chance events
+   - Discrete probability focuses of situations involving discrete sets of objects
+     
+** Algorithms and Their Analysis
+   - An algorithm is a step-by-step sequence followed by a computer to solve a problem
+   - Induction is used to determin if an algorithm is correct
+   - Performance of algorithms is measured using concepts of discrete mathematics
+     
+** Applications and Modelling
+   - Abstract mathematical ideas often have much practical utility
+   - The smae mathematical model can be used to solve problems in situations that
+     superficially appear dissimilar
+   
+* References:
+  1. Preface, Discrete Mathematics with Applications, 5th Edition, Susanna S. Epp
