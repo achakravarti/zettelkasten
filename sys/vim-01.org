@@ -3,4 +3,7 @@
 #+FILETAGS: :sys:vim:window:
 #+DATE: [2021-03-31 Wed] 
 
-<C-w C-x>
+* <C-w x>
+
+* References:
+  1. vim index.txt section 2.2, "Window commands"
