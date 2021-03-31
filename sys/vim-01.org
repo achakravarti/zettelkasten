@@ -1,0 +1,6 @@
+#+TITLE: Swapping with the Next Window
+#+DESCRIPTION: How to swap with the next window in Vim
+#+FILETAGS: :sys:vim:window:
+#+DATE: [2021-03-31 Wed] 
+
+<C-w C-x>
