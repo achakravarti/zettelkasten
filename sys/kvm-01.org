@@ -1,0 +1,16 @@
+#+TITLE: Determining IP address of a KVM guest
+#+DESCRIPTION: How to find the IP address of a Linux KVM guest virtual machine
+#+FILETAGS: :sys:kvm:network:
+#+DATE: [2021-04-23 Fri] 
+
+* Method 1:
+** sudo virsh net-list
+** sudo virsh net-dhcp-leases <network-name>
+
+* Method 2:
+** sudo virsh list
+** sudo virsh domifaddr <domain-name>
+
+* References:
+  1. https://www.cyberciti.biz/faq/find-ip-address-of-linux-kvm-guest-virtual-\
+     machine/
