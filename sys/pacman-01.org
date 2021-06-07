@@ -1,0 +1,22 @@
+#+TITLE: Downgrading packages with Pacman
+#+DESCRIPTION: How to downgrade a package in Arch Linux with Pacman
+#+FILETAGS: :sys:pacman:downgrade:
+#+DATE: [2021-06-07 Mon] 
+
+* Downgrading a package may require dependencies to be downgraded too.
+* Pacman handles required changes to configuration files if the safeguards are not
+  bypassed.
+* If a downgrade involves a soname change, all dependencies may need to be 
+  downgraded or rebuilt.
+* Version conflicts, if they occur, need to be handled manually.
+* First search in the Pacman cache:
+** sudo pacman -U /var/cache/pacman/pkg/<pkg_name>
+* If not available, then search in the Arch Linux Archive
+** https://archive.archlinux.org/packages/
+** The packages are sorted alphabetically
+** Download the appropriate *.pkg.tar.xz file
+** sudo pacman -U <downloaded_pkg>
+
+* References:
+  1. https://wiki.archlinux.org/title/Downgrading_packages
+  2. https://averagelinuxuser.com/downgrade-package-in-arch-linux-manjaro/
