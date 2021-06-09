@@ -1,0 +1,13 @@
+#+TITLE: Fixing database lock error in Pacman
+#+DESCRIPTION: How to handle an "unable to lock database" error
+#+FILETAGS: :sys:pacman:lock:
+#+DATE: [2021-06-09 Wed] 
+
+* When working, pacman temporarily writes to /var/lib/pacman/db.lck
+* When completed, pacman deletes this file.
+* However, if pacman is interrupted before this lock file is deleted, future
+  synchornisation operations with pacman result in an error.
+* The error reported is "failed to synchronize all databases (unable to lock
+  database)"
+* To fix this error, simply sudo rm /var/lib/pacman/db.lck
+
