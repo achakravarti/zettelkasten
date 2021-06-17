@@ -1,0 +1,33 @@
+#+TITLE: SSH Alias
+#+DESCRIPTION: Creating SSH aliases to simplify access
+#+FILETAGS: :sys:ssh:alias:
+#+DATE: [2021-06-17 Thu]
+
+
+* Notes
+** Aliases are specified in the ~/.ssh/config file
+** Aliases make it easier to connect with ssh as we don't have to remember hostnames or users
+** Aliases can be created in different combinations:
+*** For a hostname only
+*** For a user and hostname
+*** For a user, hostname and SSH port
+** The hostname may be an IP address or a domain name
+** If no port is specified, the default of 22 is assumed
+** If no user is aliased, the user would have to be mentioned at the time of connection
+** Examples
+*** Add the following lines to ~/.ssh/config and connect with ssh host1
+Host host1
+    HostName 192.168.225.22
+    User john.doe
+*** Add the following lines to  ~/.ssh/config and connect with ssh host2
+Host host2
+    HostName server.example.com
+    User root
+*** Add the following lines to vi ~/.ssh/config and connect with ssh host3
+Host host3
+    HostName 192.168.1.2
+    User jane.doe
+    Port 223
+
+* References:
+**  https://ostechnix.com/how-to-create-ssh-alias-in-linux/
