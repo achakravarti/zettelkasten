@@ -1,0 +1,19 @@
+#+TITLE: ssh-copy-id
+#+DESCRIPTION: Using ssh-copy-id to copy credentials
+#+FILETAGS: :sys:ssh:copy-id:
+#+DATE: [2021-06-18 Fri]
+
+
+* Notes
+** Login with ssh enforces good security practices
+** To copy default identity to remote machine:
+*** ssh-copy-id user@hostname.example.com
+** To copy specific identity, use the -i flag
+*** ssh-copy-id -i ~/.ssh/id_rsa.pub user@hostname.example.com
+** In case ssh-copy-id fails owing to permission errors, you can manually copy the identity
+*** cat ~/.ssh/id_rsa.pub
+*** Copy the contents
+*** Append to ~/.ssh/authorized_keys in remote user account
+
+* References:
+**  https://ostechnix.com/how-to-create-ssh-alias-in-linux/
