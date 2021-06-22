@@ -18,6 +18,7 @@
    # $ws1 is a user-defined variable identifying workspace number 1
    assign [class="Slack"] $ws1
    #+END_SRC
+6. Reload i3.
 * References
 ** Web
 1. https://forum.level1techs.com/t/i3wm-open-terminal-on-startup-on-a-specific-workspace/124695
