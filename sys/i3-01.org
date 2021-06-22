@@ -1,0 +1,24 @@
+#+TITLE: Setting Default Workspace for Applications in i3
+#+DESCRIPTION: How to set the default workspace in which an application will open in i3
+#+FILETAGS: :sys:i3:workspace
+#+DATE:[2021-06-22 Tue]
+
+* Notes
+** The default workspace for an application can be specified in the i3 config file.
+** The window manager class of the application needs to be associated with a workspace.
+** The window manager class can be determined using the xprop utility
+* Steps
+1. Open the application for which the default workspace has to be set.
+2. Open xprop in a separate terminal window.
+3. Click on the application.
+4. The second string in the output WM_CLASS property is the application class.
+5. Add the following lines to ~/.config/i3/config:
+   #+BEGIN_SRC
+   # "Slack" is the WM class for Slack, obtained from xprop
+   # $ws1 is a user-defined variable identifying workspace number 1
+   assign [class="Slack"] $ws1
+   #+END_SRC
+* References
+** Web
+1. https://forum.level1techs.com/t/i3wm-open-terminal-on-startup-on-a-specific-workspace/124695
+2. https://bbs.archlinux.org/viewtopic.php?id=133254
