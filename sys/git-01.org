@@ -1,5 +1,5 @@
 #+TITLE: Automatically adding sign-off message to commits
-#+DESCRIPTION: How to convert an MP4 file to MP3 using ffmpeg
+#+DESCRIPTION: How to automatically add a sign-off line to commit messages
 #+FILETAGS: :sys:git:signoff
 #+DATE:[2021-07-13 Tue]
 
