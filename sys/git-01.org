@@ -1,0 +1,25 @@
+#+TITLE: Automatically adding sign-off message to commits
+#+DESCRIPTION: How to convert an MP4 file to MP3 using ffmpeg
+#+FILETAGS: :sys:git:signoff
+#+DATE:[2021-07-13 Tue]
+
+* Basic command
+#+BEGIN_SRC bash
+ffmpeg -i video.mp4 audio.mp3
+#+END_SRC
+
+* Conversion with bitrate
+#+BEGIN_SRC bash
+ffmpeg -i video.mp4 -b:a 192K -vn audio.mp3
+#+END_SRC
+
+* Notes
+** MP3 bitrates range from 8K (lowest) to 320K (highest)
+** A bitrate of 192K is usually sufficient, with 256K being high quality
+
+* References
+** https://www.reddit.com/r/headphones/comments/21pz3m/is_192_kbps_good_enough_for_my_setup_or_am_i/
+** https://superuser.com/questions/332347/
+** https://trac.ffmpeg.org/wiki/Encode/MP3
+** https://gist.github.com/protrolium/e0dbd4bb0f1a396fcb55
+
