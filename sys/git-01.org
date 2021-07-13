@@ -3,23 +3,31 @@
 #+FILETAGS: :sys:git:signoff
 #+DATE:[2021-07-13 Tue]
 
-* Basic command
+* Setup
+** Add the following lines in your global ~/.gitconfig:
 #+BEGIN_SRC bash
-ffmpeg -i video.mp4 audio.mp3
+[alias]
+	commit = commit -s
+
+[commit]
+	template = ~/.gitmessage
 #+END_SRC
 
-* Conversion with bitrate
+In addition, add the following lines in your global ~/.gitmessage:
 #+BEGIN_SRC bash
-ffmpeg -i video.mp4 -b:a 192K -vn audio.mp3
+
+
+Signed-off-by: Your name <your email>
 #+END_SRC
 
 * Notes
-** MP3 bitrates range from 8K (lowest) to 320K (highest)
-** A bitrate of 192K is usually sufficient, with 256K being high quality
+** A sign off message has a specific significance which ought to be documented
+** For the Linux Kernel project, the sign off indicates adherence to the Developer Certificate of Origin
+** A sign-off message should be supported with a GPG signature
+** If you are doing a quick commit, ensure you add the -s flag
 
 * References
-** https://www.reddit.com/r/headphones/comments/21pz3m/is_192_kbps_good_enough_for_my_setup_or_am_i/
-** https://superuser.com/questions/332347/
-** https://trac.ffmpeg.org/wiki/Encode/MP3
 ** https://gist.github.com/protrolium/e0dbd4bb0f1a396fcb55
+** https://stackoverflow.com/questions/15015894/
+** https://developercertificate.org/
 
